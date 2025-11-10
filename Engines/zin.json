@@ -1,12 +1,12 @@
 {
     "private" : false,
-    "nps"     : 1867368,
+    "nps"     : 2979873,
     "source"  : "https://github.com/oilsoundsfunny/zin",
 
     "build" : {
         "path"      : "",
         "compilers" : ["zig"],
-        "cpuflags"  : [""],
+        "cpuflags"  : [],
         "systems"   : ["Windows", "Linux"]
     },
 
