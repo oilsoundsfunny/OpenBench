@@ -539,10 +539,10 @@ class Cutechess:
     def kill_everything(dev_process, base_process):
 
         if IS_LINUX:
-            utils.kill_process_by_name('cutechess-ob')
+            utils.kill_process_by_name('fastchess')
 
         if IS_WINDOWS:
-            utils.kill_process_by_name('cutechess-ob.exe')
+            utils.kill_process_by_name('fastchess.exe')
 
         utils.kill_process_by_name(dev_process)
         utils.kill_process_by_name(base_process)
@@ -727,13 +727,13 @@ def locate_utility(util, force_exit=True, report_error=True):
 
 def set_cutechess_permissions():
 
-    status = os.system('sudo -n chmod 777 cutechess-ob > /dev/null 2>&1')
+    status = os.system('sudo -n chmod 777 fastchess > /dev/null 2>&1')
 
     if status != 0:
-        status = os.system('chmod 777 cutechess-ob > /dev/null 2>&1')
+        status = os.system('chmod 777 fastchess > /dev/null 2>&1')
 
     if status != 0:
-        print ('[ERROR] Unable to set execute permissions on cutechess-ob')
+        print ('[ERROR] Unable to set execute permissions on fastchess')
 
 
 def cleanup_client():
@@ -1150,7 +1150,7 @@ def build_cutechess_command(config, dev_cmd, base_cmd, scale_factor, timestamp, 
     flags += ' ' + Cutechess.book_settings(config, cutechess_idx)
     flags += ' ' + Cutechess.pgnout_settings(config, timestamp, cutechess_idx)
 
-    return ['cutechess-ob.exe', './cutechess-ob'][IS_LINUX] + flags
+    return ['fastchess.exe', './fastchess'][IS_LINUX] + flags
 
 def run_and_parse_cutechess(config, command, cutechess_idx, results_queue, abort_flag):
 
