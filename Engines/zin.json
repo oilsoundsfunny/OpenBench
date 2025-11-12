@@ -1,6 +1,6 @@
 {
     "private" : false,
-    "nps"     : 2900000,
+    "nps"     : 2000000,
     "source"  : "https://github.com/oilsoundsfunny/zin",
 
     "build" : {
