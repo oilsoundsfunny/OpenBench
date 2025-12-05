@@ -1,7 +1,7 @@
 {
     "private" : false,
     "nps"     : 1500000,
-    "source"  : "https://github.com/oilsoundsfunny/zin",
+    "source"  : "https://codeberg.org/oilsoundsfunny/zin",
 
     "build" : {
         "path"      : "",
