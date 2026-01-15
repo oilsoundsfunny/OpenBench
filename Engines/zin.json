@@ -30,7 +30,7 @@
         "LTC" : {
             "both_options"      : "Threads=1 Hash=64",
             "both_time_control" : "60.0+0.6",
-            "workload_size"     : 8,
+            "workload_size"     : 8
         },
 
         "SMP STC" : {
@@ -42,7 +42,7 @@
         "SMP LTC" : {
             "both_options"      : "Threads=14 Hash=256",
             "both_time_control" : "30.0+0.3",
-            "workload_size"     : 16,
+            "workload_size"     : 16
         },
 
         "STC Simplification" : {
