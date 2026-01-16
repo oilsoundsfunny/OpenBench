@@ -4,7 +4,7 @@
     "source"  : "https://github.com/oilsoundsfunny/zin",
 
     "build" : {
-        "path"      : "src",
+        "path"      : "",
         "compilers" : ["zig"],
         "cpuflags"  : [],
         "systems"   : ["Linux", "Windows"]
